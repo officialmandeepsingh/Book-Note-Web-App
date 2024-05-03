@@ -23,6 +23,7 @@ class NoteList extends Component
     }
 
     public function bookSelected($bookId){
+        // dd($bookId);
         try{
             $this->bookId = $bookId;
             $user = Auth::user();

@@ -6,7 +6,7 @@
     @forelse ($notes as $note)
     {{-- {{$note->title}} --}}
 <div class="card m-2">
-        <div class="card-body">
+<div class="card-body" style="cursor: pointer;">
             <h5 class="card-title">{{$note->title}}</h5>
 <p class="card-text">
                 {{ strlen($note->note) > $stringLength ? substr($note->note, 0, $stringLength) . '...' :
