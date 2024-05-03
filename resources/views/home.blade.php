@@ -3,12 +3,12 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center row">
-        <div class="col-md-3">
+<div class="col-md-4">
             <div class="card">
 {{-- <div class="card-header">{{ __('Book') }} </div> --}}
 <div class="card-header d-flex justify-content-between align-items-center">
     <span>{{ __('Book') }}</span>
-    <a href="" class="btn btn-primary">Add New Book</a>
+<a href="{{route('book.store.page')}}" class="btn btn-primary">Add New</a>
 </div>
                 <div class="card-body">
                     @if (session('status'))
@@ -26,7 +26,7 @@
 {{-- <div class="card-header">{{ __('Notes') }}</div> --}}
 <div class="card-header d-flex justify-content-between align-items-center">
     <span>{{ __('Notes') }}</span>
-    <a href="" class="btn btn-primary">Add New Notes</a>
+{{-- <a href="{{route('note.store.page')}}" class="btn btn-primary">Add New</a> --}}
 </div>
                 <div class="card-body">
                     @if (session('status'))

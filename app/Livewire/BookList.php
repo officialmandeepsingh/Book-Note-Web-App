@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\Book;
 use Exception;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 use Livewire\Component;
 
 class BookList extends Component
@@ -32,11 +33,12 @@ class BookList extends Component
         }catch(Exception $e){
 
         }
-        
+     
     }
 
     public function selectBook($bookid){
         $this->dispatch("bookSelected",$bookid);
+        // $this->dispatch("selectBook",$bookid);
     }
 
 }
